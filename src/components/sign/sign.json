@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sign_signs",
+  "info": {
+    "displayName": "sign",
+    "icon": "underline",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sign": {
+      "type": "string"
+    }
+  }
+}

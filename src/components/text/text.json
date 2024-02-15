@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_texts",
+  "info": {
+    "displayName": "text",
+    "icon": "strikeThrough"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "header": {
+      "type": "string"
+    }
+  }
+}

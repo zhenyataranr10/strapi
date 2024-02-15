@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_fsms",
+  "info": {
+    "singularName": "users-fsm",
+    "pluralName": "users-fsms",
+    "displayName": "UsersFSM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fcm": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

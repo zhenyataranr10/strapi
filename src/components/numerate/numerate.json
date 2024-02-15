@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_numerate_numerates",
+  "info": {
+    "displayName": "numerate",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "numerate": {
+      "type": "text"
+    },
+    "header": {
+      "type": "string"
+    }
+  }
+}

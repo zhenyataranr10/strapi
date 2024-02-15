@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_video_video_items",
+  "info": {
+    "displayName": "videoItem",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

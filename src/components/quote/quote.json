@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_quote_quotes",
+  "info": {
+    "displayName": "quote",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "header": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::author.author"
+    }
+  }
+}
