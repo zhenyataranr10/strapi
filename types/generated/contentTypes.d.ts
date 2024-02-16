@@ -915,6 +915,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     singularName: 'story';
     pluralName: 'stories';
     displayName: 'Story';
+    description: '';
   };
   options: {
     draftAndPublish: true;
