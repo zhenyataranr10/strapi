@@ -1,7 +1,7 @@
 // ./src/index.js
     'use strict';
     var admin = require("firebase-admin");
-    var serviceAccount = require("/Users/r10/Desktop/strapiTest/strapiEndTest/src/strapi-test11-firebase-adminsdk-990ux-f8ff60990b.json");
+    var serviceAccount = require("./strapi-test11-firebase-adminsdk-990ux-f8ff60990b.json");
     module.exports = {
       /**
        * An asynchronous register function that runs before
