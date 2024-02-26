@@ -74,6 +74,8 @@ module.exports = ({ strapi }) => ({
   },
   async processNotification(body) {
     const { data, tokens } = body;
+
+    console.log("Iou we is hear!!!")
     
     const strapiNotificationResult = await strapi.entityService.create(
       "plugin::expo-notifications.exponotification",
@@ -87,6 +89,8 @@ module.exports = ({ strapi }) => ({
     );
 
     let users = await strapi.entityService.findMany('api::users-fsm.users-fsm');
+
+    console.log(users)
 
     users.forEach(user => {
         strapi.notification.sendNotification(user.fcm, {
