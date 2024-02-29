@@ -7,9 +7,9 @@ export interface AuthorAuthor extends Schema.Component {
     description: '';
   };
   attributes: {
-    author: Attribute.Relation<
+    authors: Attribute.Relation<
       'author.author',
-      'oneToOne',
+      'oneToMany',
       'api::author.author'
     >;
     header: Attribute.String;
@@ -81,15 +81,12 @@ export interface QuoteQuote extends Schema.Component {
   info: {
     displayName: 'quote';
     icon: 'quote';
+    description: '';
   };
   attributes: {
     quote: Attribute.Text;
     header: Attribute.String;
-    authors: Attribute.Relation<
-      'quote.quote',
-      'oneToMany',
-      'api::author.author'
-    >;
+    author: Attribute.Relation<'quote.quote', 'oneToOne', 'api::author.author'>;
   };
 }
 

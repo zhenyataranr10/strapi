@@ -6,9 +6,9 @@
   },
   "options": {},
   "attributes": {
-    "author": {
+    "authors": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::author.author"
     },
     "header": {
