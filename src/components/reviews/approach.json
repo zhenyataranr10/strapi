@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_approach_approaches",
+  "info": {
+    "displayName": "Reviews",
+    "icon": "thumbUp",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "text"
+    }
+  }
+}

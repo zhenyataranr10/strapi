@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "AboutUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "table.reviews",
+        "collection.competencies",
+        "clients.clients",
+        "people.people",
+        "reviews.approach",
+        "text.text"
+      ]
+    }
+  }
+}

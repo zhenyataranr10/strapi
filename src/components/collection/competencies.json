@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_competencies_competencies",
+  "info": {
+    "displayName": "Collection",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

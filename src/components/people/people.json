@@ -1,19 +1,18 @@
 {
-  "collectionName": "components_text_texts",
+  "collectionName": "components_people_people",
   "info": {
-    "displayName": "text",
-    "icon": "strikeThrough",
-    "description": ""
+    "displayName": "People",
+    "icon": "alien"
   },
   "options": {},
   "attributes": {
-    "text": {
-      "type": "text"
-    },
-    "header": {
+    "name": {
       "type": "string"
     },
-    "images": {
+    "position": {
+      "type": "text"
+    },
+    "image": {
       "allowedTypes": [
         "images",
         "files",
@@ -21,7 +20,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

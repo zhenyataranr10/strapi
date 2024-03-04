@@ -16,6 +16,32 @@ export interface AuthorAuthor extends Schema.Component {
   };
 }
 
+export interface ClientsClients extends Schema.Component {
+  collectionName: 'components_clients_clients';
+  info: {
+    displayName: 'Clients';
+    icon: 'emotionHappy';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    clients: Attribute.Media;
+  };
+}
+
+export interface CollectionCompetencies extends Schema.Component {
+  collectionName: 'components_competencies_competencies';
+  info: {
+    displayName: 'Collection';
+    icon: 'dashboard';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.Text;
+  };
+}
+
 export interface HeaderHeader extends Schema.Component {
   collectionName: 'components_header_headers';
   info: {
@@ -76,6 +102,19 @@ export interface NumerateNumerate extends Schema.Component {
   };
 }
 
+export interface PeoplePeople extends Schema.Component {
+  collectionName: 'components_people_people';
+  info: {
+    displayName: 'People';
+    icon: 'alien';
+  };
+  attributes: {
+    name: Attribute.String;
+    position: Attribute.Text;
+    image: Attribute.Media;
+  };
+}
+
 export interface QuoteQuote extends Schema.Component {
   collectionName: 'components_quote_quotes';
   info: {
@@ -87,6 +126,22 @@ export interface QuoteQuote extends Schema.Component {
     quote: Attribute.Text;
     header: Attribute.String;
     author: Attribute.Relation<'quote.quote', 'oneToOne', 'api::author.author'>;
+  };
+}
+
+export interface ReviewsApproach extends Schema.Component {
+  collectionName: 'components_approach_approaches';
+  info: {
+    displayName: 'Reviews';
+    icon: 'thumbUp';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    image: Attribute.Media;
+    description: Attribute.Text;
+    name: Attribute.String;
+    position: Attribute.Text;
   };
 }
 
@@ -102,15 +157,31 @@ export interface SignSign extends Schema.Component {
   };
 }
 
+export interface TableReviews extends Schema.Component {
+  collectionName: 'components_reviews_reviews';
+  info: {
+    displayName: 'Table';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.Text;
+    number: Attribute.BigInteger;
+  };
+}
+
 export interface TextText extends Schema.Component {
   collectionName: 'components_text_texts';
   info: {
     displayName: 'text';
     icon: 'strikeThrough';
+    description: '';
   };
   attributes: {
     text: Attribute.Text;
     header: Attribute.String;
+    images: Attribute.Media;
   };
 }
 
@@ -142,13 +213,18 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'author.author': AuthorAuthor;
+      'clients.clients': ClientsClients;
+      'collection.competencies': CollectionCompetencies;
       'header.header': HeaderHeader;
       'image.image': ImageImage;
       'images.images': ImagesImages;
       'list.list': ListList;
       'numerate.numerate': NumerateNumerate;
+      'people.people': PeoplePeople;
       'quote.quote': QuoteQuote;
+      'reviews.approach': ReviewsApproach;
       'sign.sign': SignSign;
+      'table.reviews': TableReviews;
       'text.text': TextText;
       'video.video-item': VideoVideoItem;
       'video.video': VideoVideo;

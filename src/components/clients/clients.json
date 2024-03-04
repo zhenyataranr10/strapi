@@ -1,19 +1,16 @@
 {
-  "collectionName": "components_text_texts",
+  "collectionName": "components_clients_clients",
   "info": {
-    "displayName": "text",
-    "icon": "strikeThrough",
+    "displayName": "Clients",
+    "icon": "emotionHappy",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
-      "type": "text"
-    },
-    "header": {
+    "title": {
       "type": "string"
     },
-    "images": {
+    "clients": {
       "allowedTypes": [
         "images",
         "files",
